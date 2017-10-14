@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_cart_profile"
+        app:showAsAction="always"
+        android:icon="@mipmap/ic_launcher_cart2"/>
+    <group
+        android:id="@+id/group"
+        >
+        <item android:id="@+id/logout"
+            app:showAsAction="collapseActionView"
+            android:title="Đăng xuất"/>
+        <item android:id="@+id/change_pass"
+            app:showAsAction="collapseActionView"
+            android:title="Đổi mật khâu"/>
+        <item android:id="@+id/edit_info"
+            app:showAsAction="collapseActionView"
+            android:title="Đổi thông tin"/>
+        <item android:id="@+id/back_home"
+            app:showAsAction="collapseActionView"
+            android:title="Trang chủ"/>
+        <item android:id="@+id/Exit"
+            app:showAsAction="collapseActionView"
+            android:title="Thoát"/>
+    </group>
+</menu>

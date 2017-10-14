@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/progresssBar_new"
+        android:indeterminate="false"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:gravity="center_horizontal"
+        android:text="Chưa kết nối internet, chạm để thử lại!"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:id="@+id/txtinternet_new"
+        />
+    <ImageButton
+        android:src="@drawable/reload"
+        android:visibility="invisible"
+        android:id="@+id/btnimgreload_new"
+        android:layout_gravity="center"
+        android:layout_width="120sp"
+        android:layout_height="120sp" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/gridViewSanPhamPageNew"
+            android:horizontalSpacing="5dp"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="30dp"
+            >
+        </GridView>
+    </FrameLayout>
+</FrameLayout>

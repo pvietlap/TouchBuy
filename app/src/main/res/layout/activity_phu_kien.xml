@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.phamvietlap.touchbuy.Activity.Activity.Detail_SanPham">
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/MyDrawerlayout"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar
+                android:background="#f2e603"
+                app:titleTextColor="#210e74"
+                android:id="@+id/nav_toolbar_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.Toolbar>
+
+            <GridView
+                android:scrollbars="none"
+                android:layout_marginTop="5sp"
+                android:gravity="center_horizontal"
+                android:id="@+id/gridPhuKien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="5dp"
+                android:numColumns="2"
+                android:padding="5sp"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="30dp"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

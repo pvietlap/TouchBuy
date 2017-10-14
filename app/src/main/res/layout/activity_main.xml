@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.phamvietlap.touchbuy.Activity.Activity.MainActivity"
+    android:background="#ffff">
+
+
+
+    <android.support.v4.widget.DrawerLayout
+       android:layout_height="495dp"
+       android:layout_width="368dp"
+       android:id="@+id/MyDrawerlayout"
+       tools:layout_editor_absoluteY="8dp"
+       tools:layout_editor_absoluteX="8dp">
+       <LinearLayout
+           android:orientation="vertical"
+           android:id="@+id/LinearLayout"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:background="#f2e603"
+            app:titleTextColor="#210e74"
+            android:id="@+id/nav_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.Toolbar>
+
+           <android.support.v4.view.ViewPager
+               android:layout_weight="11"
+               android:id="@+id/viewPage"
+               android:layout_height="match_parent"
+               android:layout_width="match_parent"
+               >
+           </android.support.v4.view.ViewPager>
+           <!--<android.support.design.widget.AppBarLayout-->
+               <!--android:id="@+id/myAppBarLayout"-->
+               <!--android:layout_height="wrap_content"-->
+               <!--android:layout_width="match_parent"-->
+               <!--android:layout_marginBottom="20dp"-->
+               <!--&gt;-->
+               <android.support.design.widget.TabLayout
+                   app:tabBackground="@color/colorPrimary"
+                   android:layout_below="@+id/viewPage"
+                   app:tabGravity="fill"
+                   app:tabMode="fixed"
+                   app:tabSelectedTextColor="#FFFFFf"
+                   app:tabTextColor="@color/wordTab"
+                   android:id="@+id/tabLayout"
+                   android:layout_height="50dp"
+                   android:layout_width="match_parent">
+
+               </android.support.design.widget.TabLayout>
+
+           <!--</android.support.design.widget.AppBarLayout>-->
+
+
+       </LinearLayout>
+
+
+
+       <android.support.design.widget.NavigationView
+           app:menu="@menu/item_navi"
+           android:id="@+id/myNavi_view"
+           android:layout_gravity="start"
+           app:headerLayout="@layout/head_navi_view"
+           android:layout_height="match_parent"
+           android:layout_width="match_parent"           >
+       </android.support.design.widget.NavigationView>
+
+   </android.support.v4.widget.DrawerLayout>
+
+</android.support.v4.widget.DrawerLayout>

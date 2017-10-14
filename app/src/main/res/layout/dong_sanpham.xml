@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+        <ImageView
+            android:src="@drawable/image"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:id="@+id/img_hinhsanpham"/>
+        <TextView
+            android:textAlignment="center"
+
+            android:layout_width="100sp"
+            android:layout_height="30sp"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:text="Tên sản phẩm"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/txt_tensanpham"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ff00"
+            android:text="Giá sản phầm"
+            android:textSize="12sp"
+            android:id="@+id/txt_giasanpham"/>
+    </LinearLayout>
+
+
+</LinearLayout>
