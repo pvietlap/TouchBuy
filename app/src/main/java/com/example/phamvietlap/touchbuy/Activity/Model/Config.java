@@ -7,7 +7,7 @@ package com.example.phamvietlap.touchbuy.Activity.Model;
 public class Config {
 
     public static  final String  s="http://touchbuy123.atspace.cc";
-  //  public static  final String  s="http://192.168.56.1/phone";
+ //   public static  final String  s="http://192.168.56.1/phone";
     public static final String Link_login= s+"/login.php";
     public static final String Link_pageHome=s+"/getsanphampage1.php";
     public static final String Link_pagenew=s+"/getspmoi.php";
@@ -24,9 +24,9 @@ public class Config {
     public static final String Link_getphukien=s+"/getphukien.php";
     public static final String Link_getnews="https://vnexpress.net/rss/so-hoa.rss";
     public static final String Link_num_cart=s+"/getnumcart.php?Id=";
-
+   public static final String Link_singup=s+"/registration.php";
     public static final String SHARED_PREF_NAME = "myloginapp";
-    public static final String Link_singup="public static final String Link_singup";
+
     //This would be used to store the email of current logged in user
     public static final String EMAIL_SHARED_PREF = "email";
 
