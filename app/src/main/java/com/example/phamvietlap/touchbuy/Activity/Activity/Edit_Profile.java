@@ -32,8 +32,8 @@ import java.net.URL;
 import java.net.URLConnection;
 
 public class Edit_Profile extends AppCompatActivity {
-    EditText txtEmail, txtHoTen, txtSDT, txtDiaChi;
-    TextView     txtSoLuong;
+    EditText txtHoTen, txtSDT, txtDiaChi;
+    TextView     txtSoLuong,txtEmail;
     Button      btnhoanthanh;
     public static String      email;
     @Override
@@ -52,7 +52,7 @@ public class Edit_Profile extends AppCompatActivity {
         btnhoanthanh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new PUsh_data().execute("http://192.168.56.1/phone/updatecustomer.php");
+                new PUsh_data().execute(Config.Link_edit_Profile);
                 finish();
                // Toast.makeText(getApplicationContext(),email+txtDiaChi.getText().toString()+txtSDT.getText().toString()+txtHoTen.getText().toString(),Toast.LENGTH_LONG).show();
             }
@@ -203,7 +203,7 @@ public class Edit_Profile extends AppCompatActivity {
         return content.toString();
     }
     private void AnhXa(){
-        txtEmail    = (EditText) findViewById(R.id.edtEmailKhachHang);
+        txtEmail    = (TextView) findViewById(R.id.txtEmailKhachHang);
         txtDiaChi   = (EditText) findViewById(R.id.edtDiaChiKH);
         txtSDT      = (EditText) findViewById(R.id.edtSDTKhachHang);
         txtHoTen    = (EditText) findViewById(R.id.edtHoTenKH);

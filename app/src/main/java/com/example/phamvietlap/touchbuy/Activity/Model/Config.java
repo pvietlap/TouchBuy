@@ -7,12 +7,13 @@ package com.example.phamvietlap.touchbuy.Activity.Model;
 public class Config {
 
     public static  final String  s="http://touchbuy123.atspace.cc";
- //   public static  final String  s="http://192.168.56.1/phone";
+//    public static  final String  s="http://192.168.56.1/phone";
     public static final String Link_login= s+"/login.php";
     public static final String Link_pageHome=s+"/getsanphampage1.php";
     public static final String Link_pagenew=s+"/getspmoi.php";
 
     public static final String Link_profile=s+"/getcustomer.php?Mail=";
+    public static final String Link_edit_Profile = s+"/updatecustomer.php";
     public static final String Link_product=s+"/getdetailsp.php?Id=";
     public static final String Link_Thanhtoan1=s+"/dathang.php";
     public static final String Link_Thanhtoan2=s+"/chitietdonhang.php";

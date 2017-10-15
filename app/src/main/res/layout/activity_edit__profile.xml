@@ -108,8 +108,8 @@
                     android:textStyle="bold"
                     android:textColor="#262626"
                     android:layout_height="wrap_content" />
-                <EditText
-                    android:id="@+id/edtEmailKhachHang"
+                <TextView
+                    android:id="@+id/txtEmailKhachHang"
                     android:textSize="20sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />

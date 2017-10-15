@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 import com.example.phamvietlap.touchbuy.Activity.Model.Config;
@@ -146,12 +147,34 @@ public class Profile extends AppCompatActivity {
                 return false;
             }
         });
+        toolbar.findViewById(R.id.menu_cart_profile).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent   intent = new Intent(Profile.this,MainActivity.class);
+                intent.putExtra("Page",2);
+                startActivity(intent);
+            }
+        });
     }
     @Override
     protected void onResume() {
         super.onResume();
         SharedPreferences sharedPreferences=getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
         email=sharedPreferences.getString(Config.EMAIL_SHARED_PREF,"");
+
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                new getsoluong().execute(Config.Link_num_cart+ID);
+            }
+        });
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                new getprofile().execute(Config.Link_profile+getEmail());
+                new getId().execute(Config.Link_getId+getEmail());
+            }
+        });
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
