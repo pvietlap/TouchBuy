@@ -6,7 +6,7 @@
         android:background="@drawable/backg_gridview"
         android:orientation="vertical"
         android:layout_gravity="center"
-        android:layout_width="200sp"
+        android:layout_width="170sp"
         android:layout_height="165sp"
         android:layout_marginTop="5sp">
         <RelativeLayout
